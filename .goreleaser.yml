@@ -1,5 +1,5 @@
 # GoReleaser configuration version 2
-version: '2'
+version: 2
 
 before:
   hooks:
