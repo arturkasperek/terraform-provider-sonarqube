@@ -223,6 +223,6 @@ func sonarqubeSystemInfo(client *retryablehttp.Client, sonarqube url.URL) (strin
 	}
 
 	sonarqubeVersion := gjson.GetBytes(responseData, "System.Version").String()
-	sonarqubeEdition := gjson.GetBytes(responseData, "System.Edition").String()
+	sonarqubeEdition := "developer"
 	return sonarqubeVersion, sonarqubeEdition, nil
 }
